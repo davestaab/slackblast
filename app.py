@@ -536,3 +536,8 @@ async def endpoint(req: Request):
 async def status_ok():
     logging.debug('[In app.get("/")]')
     return "ok"
+
+@app.get("/test")
+async def status_ok():
+    logging.debug('[In app.get("/test")]')
+    return "hello world"
